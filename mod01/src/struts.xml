@@ -17,6 +17,7 @@
 		</action>
 		<action name="uservalid" class="com.tainan.controller.RegisterController" method="valid">
 			<result name="ok">/WEB-INF/login/validOK.jsp</result>
+		    <result name="failure">/WEB-INF/login/invalid.jsp</result>
 		</action>
 	</package>
 	
