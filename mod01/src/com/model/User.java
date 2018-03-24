@@ -2,7 +2,7 @@ package com.model;
 
 public class User {
 	
-	//JavaBean
+	   //JavaBean
 		private String userName;
 		private String password;
 
