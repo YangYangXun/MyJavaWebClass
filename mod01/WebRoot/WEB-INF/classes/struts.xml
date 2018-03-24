@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="strutspkg" extends="struts-default">
+		<action name="hello" method="helloWorld"
+			class="com.tainan.controller.HelloController">
+
+			<result name="success" type="dispatcher"> /hello.jsp </result>
+
+		</action>
+	</package>
+
+	<package name="register" extends="struts-default">
+		<action name="login" class="com.tainan.controller.RegisterController">
+			<result name="success">/WEB-INF/login/mylogin.html</result>
+		</action>
+		<action name="uservalid" class="com.tainan.controller.RegisterController" method="valid">
+			<result name="ok">/WEB-INF/login/validOK.jsp</result>
+		</action>
+	</package>
+	
+	
+
+</struts>    
